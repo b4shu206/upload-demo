@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // Chỉ kiểm tra Content-Type
         if (!in_array($file_type, $allowed_types)) {
-            die("❌ Chỉ chấp nhận file có Content-Type: text/plain.");
+            die("❌ Chỉ chấp nhận file txt");
         }
 
         if (move_uploaded_file($file_tmp, $file_path)) {
