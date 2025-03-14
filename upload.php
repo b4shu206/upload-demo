@@ -27,7 +27,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $char_count = mb_strlen($content, 'UTF-8');
 
             echo "✅ File đã tải lên thành công! <br>";
-            echo "📄 Tên file lưu trên server: $new_file_name <br>";
             echo "🔢 Số ký tự trong file: $char_count <br>";
             echo "<a href='index.php'>🔙 Upload file khác</a>";
         } else {
